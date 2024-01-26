@@ -13,7 +13,7 @@ app.use(cors());
 require('dotenv').config()
 
 //połączenie z bazą
-mongoose.connect(`mongodb+srv://szczechzbyszek:lxGfJ5vgsBPnYy4e@cluster0.ngqorpg.mongodb.net/fretascend?retryWrites=true&w=majority`)
+mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.ngqorpg.mongodb.net/fretascend?retryWrites=true&w=majority`)
 
 //logger
 app.use(morgan("combined")); //uruchomienie

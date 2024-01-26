@@ -18,7 +18,7 @@
     const { user } = useAuth();
   
     if (!user) {
-      // Wyświetl Toast o błędzie i przekieruj użytkownika na stronę główną
+
       toast.error('Musisz być zalogowany, aby uzyskać dostęp.');
       return <Navigate to="/" />;
     }
