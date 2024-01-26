@@ -15,9 +15,7 @@ const Chords = () => {
 
   const handleChordRemove = async (chordId) => {
     try {
-
       await axios.delete(`http://localhost:3000/chords/${chordId}`);
-
 
       const updatedChords = chords.filter((chord) => chord.id !== chordId);
       setChords(updatedChords);
@@ -51,24 +49,27 @@ const Chords = () => {
       <ChordsForm onChordAdded={handleChordAdded} />
 
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-6">
-      {chords.map((chord) => (
-  <div key={chord.id} className="col mb-4">
-    <Card className="chord-card">
-      <div>
-        <Card.Img variant="top" src={chord.imageUrl} className='chord-card-img' />
-        <Card.Body className="chord-card-body">
-          <Card.Title className="custom-card-title">{chord.name}</Card.Title>
-          <small>
-            <audio controls className='chord-audio'>
-              <source src={chord.soundUrl} type="audio/mpeg" />
-              Your browser does not support the audio element.
-            </audio>
-          </small>
-        </Card.Body>
-      </div>
-    </Card>
-  </div>
-))}
+        {chords.map((chord) => (
+          <div key={chord.id} className="col mb-4">
+            <Card className="chord-card">
+              <div>
+                <Card.Img variant="top" src={chord.imageUrl} className='chord-card-img' />
+                <Card.Body className="chord-card-body">
+                  <Card.Title className="custom-card-title">{chord.name}</Card.Title>
+                  <small>
+                    <audio controls className='chord-audio'>
+                      <source src={chord.soundUrl} type="audio/mpeg" />
+                      Your browser does not support the audio element.
+                    </audio>
+                  </small>
+                  <Button variant="danger" onClick={() => handleChordRemove(chord.id)}>
+                    Usuń
+                  </Button>
+                </Card.Body>
+              </div>
+            </Card>
+          </div>
+        ))}
       </div>
     </div>
   );
