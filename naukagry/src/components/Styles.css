@@ -1,0 +1,127 @@
+.bg-image {
+    background-image: url('pics/back.jpg');
+    background-size: cover; /* Dopasowuje obrazek, zachowując proporcje */
+    background-position: center; /* Ustala położenie obrazka */
+    height: 100vh; /* Ustawia wysokość na 100% wysokości okna */
+    display: flex; /* Umożliwia prawidłowe wyświetlanie */
+    justify-content: center; /* Wyśrodkowanie treści w pionie */
+
+  }
+
+  body {
+    font-family: 'Lobster'; /* Ustaw wybraną czcionkę */
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Cień dla kart */
+  }
+  
+  .card-title {
+    color: #007bff;
+  }
+  
+  .card-text {
+    color: #6c757d;
+  }
+
+  .custom-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease-in-out;
+  
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  
+  .custom-card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 13px;
+
+  }
+
+  p {
+    color: #666;
+    font-size: 22px; /* Dla paragrafów */
+  }
+
+  ul {
+    font-size: 22px;
+    font-weight: 500;
+    color: #f5efeb;
+  }
+
+  .b-ground-a {
+    background-image: url('pics/Logo/png/czarnebeztła.png');
+    background-size: cover;
+    background-position: center; 
+    height: 100vh; 
+    display: flex;
+    background-attachment: fixed;
+  }
+
+  .b-ground {
+    background-image: url('pics/gituar.png');
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+  }
+
+  .b-ground-home {
+    background-image: url('pics/gituar.png');
+    background-size: cover;
+    background-position: center; 
+    height: 100vh; 
+    display: flex;
+    background-attachment: fixed;
+  }
+
+
+  .chord-card-img {
+    width: auto; 
+    height: auto;
+  }
+
+  .chord-card-text {
+    max-height: 50px; 
+    overflow: hidden;
+  }
+
+  .chord-card {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    overflow: hidden;
+    padding-top: 8px;
+    margin: 10px;
+    max-width: 250px;
+    max-height: 440px;
+  }
+  
+  .chord-audio {
+    width: 100%;
+  }
+
+
+  .center-title {
+    text-align: center;
+  }
+  
+  .center-content {
+    text-align: center;
+  }
+  
+  .chords-container {
+
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .chord-card-body {
+    padding: 0; 
+  }
+  
