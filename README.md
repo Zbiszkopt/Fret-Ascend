@@ -43,6 +43,6 @@ $ npm start
 front:
 open new terminal(Ctrl+~)
 ```
-$ cd ../naukagry
+$ cd naukagry
 $ npm start
 ```
