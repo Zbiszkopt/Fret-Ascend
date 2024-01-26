@@ -38,7 +38,7 @@ const Start = () => {
     <button className="btn btn-primary">Rejestracja</button>
 </Link>
 <p>Dołącz do nas, aby rozpocząć swoją przygodę z grą na gitarze. Tutaj znajdziesz wszystko, czego potrzebujesz, aby stać się lepszym gitarzystą!</p>
-    
+    <p>Musisz być zalogowany, aby przeglądać zawartość :) </p>
 </center>
 </div>
 </div>

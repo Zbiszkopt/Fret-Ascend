@@ -23,7 +23,7 @@ const Navigation = () => {
         <Nav.Link href="/articles">Artykuły</Nav.Link>
         <Nav.Link href="/chords">Akordy i Tabulatury</Nav.Link>
         <Nav.Link href="/lessons">Lekcje Wideo</Nav.Link>
-        <Nav.Link href="/forum">Forum Dyskusyjne</Nav.Link>
+        
         <Nav.Link href="/premium">Premium</Nav.Link>
       </Nav>
       <Nav className="ms-auto">
