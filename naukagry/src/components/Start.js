@@ -27,10 +27,10 @@ const Start = () => {
         <li>Wsparcie społeczności: Możliwość wymiany doświadczeń z innymi początkującymi gitarzystami, dzielenie się postępami oraz motywowanie się nawzajem do dalszego rozwoju.</li>
         </ul>
       <br></br>
-      <br></br>
+     
       
 <center>
-
+<p>Musisz być zalogowany, aby przeglądać zawartość :) </p>
 <Link to="/users/login">
     <button className="btn btn-primary">Logowanie</button>
 </Link><p> </p>
@@ -38,7 +38,7 @@ const Start = () => {
     <button className="btn btn-primary">Rejestracja</button>
 </Link>
 <p>Dołącz do nas, aby rozpocząć swoją przygodę z grą na gitarze. Tutaj znajdziesz wszystko, czego potrzebujesz, aby stać się lepszym gitarzystą!</p>
-    <p>Musisz być zalogowany, aby przeglądać zawartość :) </p>
+   
 </center>
 </div>
 </div>
