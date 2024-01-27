@@ -1,5 +1,5 @@
 # Fret Ascend
-Aplikacja dla początkujących gitarzystów
+App for begginer guitarists
 
 
 ## Table of contents
